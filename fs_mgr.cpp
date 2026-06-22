@@ -2355,6 +2355,7 @@ std::string fs_mgr_get_super_partition_name(int slot) {
     return LP_METADATA_DEFAULT_PARTITION_NAME;
 #else
     // Microdroid should not use super partition at all
+    (void)slot;
     return "";
 #endif
 }
